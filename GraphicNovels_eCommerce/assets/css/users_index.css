@@ -13,6 +13,10 @@ light blue: 69B5C1;
 fuschia: A8004F;
 */
 
+body {
+	background-color: #1F2022;
+}
+
 .container {
 	width: 85%;
 	margin: 0 auto;
@@ -47,7 +51,7 @@ div.navigation {
 	color: #fff;
 	margin-bottom: 1.6rem;
 	margin-top:.8rem;
-	background-color: #0692A8;
+	background-color: #191919;
 	border-bottom: 10px solid #F6E559;
 	border-top: 10px solid #B7F63D;
 }
@@ -64,41 +68,40 @@ div.main {
 
 div.usertools {
 	padding: 1.6rem;
-	background-color: #0692A8;
+	background-color: #191919;
 	border-left: 10px solid #F6E559;
 	border-right: 10px solid #B7F63D;
 }
 
-div.decoration_1 {
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background-color: #F49DC6;
+#categories_title {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
 }
 
-div.decoration_2 {
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background-color: #F6E559;;
+#logo {
+	width: 80px;
+	height: 80px;
+	background: url("../bg_images/logo.png");
+	background-repeat: no-repeat;
+	background-size: 95%;
 }
-div.decoration_3 {
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background-color: #B7F63D;
+
+#site_title {
+	vertical-align: middle;
 }
+
 .usertools ul{
 	font-size: 1.6rem;
 	list-style-type: none;
 	padding-left: 1.6rem;
-
-
 }
 
 
 div.main-content {
 	padding-left: 1.6rem;
+	background: url("../bg_images/darkEdgeBg.png");
 }
 
 ul.pagination > li {
@@ -114,6 +117,10 @@ ul.pagination > li {
 	color: #000;
 	cursor: default;
 	background-color: inherit;
+}
+
+.sort_by {
+	margin: 20px 10px;
 }
 
 div.content {

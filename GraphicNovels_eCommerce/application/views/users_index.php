@@ -133,10 +133,8 @@
 <body>
 	<div class='container'>
 		<div class='row navigation'>
-			<div class="col-sm-1 decoration_1"></div>
-			<div class="col-sm-2 decoration_2"></div>
-			<div class="col-sm-1 decoration_3"></div>
-			<h2 class='col-sm-9'><a href="/">フィグマ Dojo</a></h2>
+			<div id="logo" class="col-sm-3"></div>
+			<h2 id="site_title" class='col-sm-9'><a href="/">フィグマ Dojo</a></h2>
 			<a href='/carts/show/' class='col-md-1'>Shopping Cart (<span id='cart_count'></span>)</a>
 		<!-- END OF NAVIGATION -->
 		</div>
@@ -148,27 +146,27 @@
 					<input id='page_number' type='hidden' name='page_number' >
 					<input id='sort' type='hidden' name='sort'>
 					<!-- /REMOVE -->
-					<input type='text' name='search' placeholder='Product name...'>
+					<input type='text' name='search' placeholder='Search Product'>
 					<button type='submit'><span class='glyphicon glyphicon-search'></span></button>
 				</form>
-				<h5>Categories</h5>
+				<h4 id="categories_title">Categories</h4>
 				<ul id='category_list'></ul>
 			</div>
 			<div class='col-md-8 main content'>
 				<div class='row'>
-					<h2 class='col-md-8'><span id="title_category"></span> (page <span class="title_page">1</span>)</h2>
-					<ul class='col-md-4 pagination'>
+					<h2 class='col-md-4'><span id="title_category"></span> (page <span class="title_page">1</span>)</h2>
+					<ul class='col-md-5 pagination'>
 						<li><a id='first' href='first'>First</a></li>
 						<li><a id='prev' href='prev'>Prev</a></li>
 						<li><a class='false' href='#'>page <span class='title_page'>1</span></a></li>
 						<li><a id='next' href='next'>Next</a></li>
 					</ul>
+					<select class='col-md-1 sort_by' name='sort'>
+						<option>Sort</option>
+						<option value='price'>Price</option>
+						<option value='quantity_sold'>Most Popular</option>
+					</select>
 				</div>
-				<select name='sort'>
-					<option>Sort</option>
-					<option value='price'>Price</option>
-					<option value='quantity_sold'>Most Popular</option>
-				</select>
 				<ul class='row products'></ul>
 				<ul id="page_links" class='row pagination footer'>
 					<li><a class='page' href='0'>1</a></li>
