@@ -40,10 +40,8 @@
 <body>
 	<div class='container'>
 		<div class='row navigation main'>
-			<div class="col-sm-1 decoration_1"></div>
-			<div class="col-sm-2 decoration_2"></div>
-			<div class="col-sm-1 decoration_3"></div>
-			<h2 class='col-sm-9'><a href="/">フィグマ Dojo</a></h2>
+			<div id="logo" class="col-sm-3"></div>
+			<h2 id="site_title" class='col-sm-9'><a href="/">フィグマ Dojo</a></h2>
 			<a class='col-md-2' href= "/carts/show">Shopping Cart (<span id='cart_count'>#</span>)</a>
 		<!-- END OF NAVIGATION -->
 		</div>

@@ -1,3 +1,7 @@
+body {
+	background-color: #1F2022;
+}
+
 .container {
 	width: 85%;
 	margin: 0 auto;
@@ -47,7 +51,7 @@ div.navigation {
 	color: #fff;
 	margin-bottom: 1.6rem;
 	margin-top:.8rem;
-	background-color: #0692A8;
+	background-color: #191919;
 	border-bottom: 10px solid #F6E559;
 	border-top: 10px solid #B7F63D;
 }
@@ -69,15 +73,31 @@ a:hover {
 }
 
 
-.navigation a {
-	
+.navigation a {	
 	text-align: right;
 	color: white;
+}
 
+#logo {
+	width: 80px;
+	height: 80px;
+	background: url("../bg_images/logo.png");
+	background-repeat: no-repeat;
+	background-size: 95%;
+}
+
+#site_title {
+	vertical-align: middle;
+}
+
+div.main-content {
+	padding-left: 1.6rem;
+	background: url("../bg_images/darkEdgeBg.png");
+	color: white;
 }
 
 div.main-content > div {
-	padding-left: 3.2rem;
+	padding-left: 3.2rem;	
 }
 
 div.main-content a, h2{
@@ -94,6 +114,7 @@ div.product-images {
 	vertical-align: top;
 	margin: .2rem;
 	padding: .8rem;
+	width: 125px;
 }
 
 .products li a {
@@ -102,6 +123,7 @@ div.product-images {
 
 div.product{
 	border: solid 1px black;
+	width: 125px;
 }
 
 .product p.price {
